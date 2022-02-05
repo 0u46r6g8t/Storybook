@@ -1,0 +1,20 @@
+import { Meta, ArgsTable, Story, Canvas } from '@storybook/addon-docs';
+import { Button } from './Button.js';
+
+<Meta title="Components/Button" component={Button}/>
+
+# Button
+
+<ArgsTable of={Button} />
+
+<Canvas>
+  <Story
+    name="Button Components"
+    args={{
+      ...Button.defaultProps,
+      label: 'Button'
+    }}
+  >
+    {(args) => <Button {...args} />}
+  </Story>
+</Canvas>
